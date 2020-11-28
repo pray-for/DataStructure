@@ -35,18 +35,20 @@ public class ListTest1 {
     /**
      * 头插法建立单链表
      */
-//    public Node createLink(Node node){
+//    public Node createLink(){
+//        Node h = new Node();
+//        h.next = null;
+////        Node s;
 //        Scanner sc = new Scanner(System.in);
-//        int data = sc.nextInt();
-//
-//        while (data != -1){
-//            Node p = new Node(data);
-//            p.next = node;
-//            node = p;
-//            data = sc.nextInt();
+//        int x = sc.nextInt();
+//        while (x != -1){
+//            Node s = new Node();
+//            s.data = x;
+//            s.next = h.next;
+//            h.next = s;
+//            x = sc.nextInt();
 //        }
-//
-//        return node;
+//        return h;
 //    }
 
 
@@ -163,6 +165,7 @@ public class ListTest1 {
 
 
     public static void main(String[] args) {
+
         ListTest1 list = new ListTest1();
         list.addNode(1);
         list.addNode(2);

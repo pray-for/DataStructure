@@ -4,16 +4,16 @@ package TreePackage;
  * 定义树的节点
  * 即定义二叉链表的节点
  */
-public class Node {
+public class TreeNode {
     Object value;
-    Node leftChild;
-    Node rightChild;
+    TreeNode leftChild;
+    TreeNode rightChild;
 
-    public Node(Object value){
+    public TreeNode(Object value){
         this.value = value;
     }
 
-    public Node(Object value, Node leftChild, Node rightChild){
+    public TreeNode(Object value, TreeNode leftChild, TreeNode rightChild){
         this.value = value;
         this.leftChild = leftChild;
         this.rightChild = rightChild;
