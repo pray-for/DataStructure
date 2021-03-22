@@ -135,7 +135,7 @@ public class ListTest {
     public static int lengthList(ListNode L){
         int length = 0;
         ListNode p = L;
-        while (p != null){
+        while (p.next != null){
             length++;
             p = p.next;
         }
@@ -148,8 +148,8 @@ public class ListTest {
     public static void printList(ListNode L){
         ListNode p = L;
         System.out.println("输出链表内容为：");
-        while (p != null){
-            System.out.print(p.data + " ");
+        while (p.next != null){
+            System.out.print(p.next.data + " ");
             p = p.next;
         }
         System.out.println(" ");
